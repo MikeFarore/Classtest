@@ -1,0 +1,20 @@
+[0;1;32m●[0m jenkins.service - Jenkins Continuous Integration Server
+     Loaded: loaded (/lib/systemd/system/jenkins.service; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Sun 2024-05-19 14:14:11 UTC; 2h 34min ago
+   Main PID: 382 (java)
+      Tasks: 45 (limit: 4575)
+     Memory: 1.1G
+        CPU: 1min 38.330s
+     CGroup: /system.slice/jenkins.service
+             └─382 /usr/bin/java -Djava.awt.headless=true -jar /usr/share/java/jenkins.war --webroot=/var/cache/jenkins/war --httpPort=8080
+
+May 19 14:13:40 ip-172-31-31-107 jenkins[382]: *************************************************************
+May 19 14:13:40 ip-172-31-31-107 jenkins[382]: *************************************************************
+May 19 14:13:40 ip-172-31-31-107 jenkins[382]: WARNING: An illegal reflective access operation has occurred
+May 19 14:13:40 ip-172-31-31-107 jenkins[382]: WARNING: Illegal reflective access by org.codehaus.groovy.vmplugin.v7.Java7$1 (file:/var/cache/jenkins/war/WEB-INF/lib/groovy-all-2.4.21.jar) to constructor java.lang.invoke.MethodHandles$Lookup(java.lang.Class,int)
+May 19 14:13:40 ip-172-31-31-107 jenkins[382]: WARNING: Please consider reporting this to the maintainers of org.codehaus.groovy.vmplugin.v7.Java7$1
+May 19 14:13:40 ip-172-31-31-107 jenkins[382]: WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+May 19 14:13:40 ip-172-31-31-107 jenkins[382]: WARNING: All illegal access operations will be denied in a future release
+May 19 14:14:11 ip-172-31-31-107 jenkins[382]: 2024-05-19 14:14:11.285+0000 [id=31]        INFO        jenkins.InitReactorRunner$1#onAttained: Completed initialization
+May 19 14:14:11 ip-172-31-31-107 jenkins[382]: 2024-05-19 14:14:11.335+0000 [id=22]        INFO        hudson.lifecycle.Lifecycle#onReady: Jenkins is fully up and running
+May 19 14:14:11 ip-172-31-31-107 systemd[1]: Started Jenkins Continuous Integration Server.
